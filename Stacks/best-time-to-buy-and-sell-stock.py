@@ -7,9 +7,9 @@ class Solution(object):
 
         left, right = 0,1
 
-        mostProfit = -1
+        maxProfit = 0
 
         for i in range(len(prices)):
             currentProfit = prices[right] - prices[left]
-            if currentProfit > mostProfit:
+            if currentProfit > maxProfit:
 
